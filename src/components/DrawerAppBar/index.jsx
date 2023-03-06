@@ -13,9 +13,15 @@ import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import Avatar from '@mui/material/Avatar';
+import pedroavatar from '../../img/pedroavatar.jpg';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['Home', 'About', <Avatar
+  alt="P"
+  src={pedroavatar}
+  sx={{ width: 56, height: 56 }}
+/>];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -92,7 +98,7 @@ function DrawerAppBar(props) {
         </Drawer>
       </Box>
       <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />        
+        <Toolbar />
       </Box>
     </Box>
   );
