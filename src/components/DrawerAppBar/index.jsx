@@ -23,8 +23,7 @@ const navItems = ['Home', 'About', <Avatar
   sx={{ width: 56, height: 56 }}
 />];
 
-function DrawerAppBar(props) {
-  const { window } = props;
+function DrawerAppBar({window}) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
