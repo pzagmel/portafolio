@@ -1,49 +1,56 @@
 import React from "react";
+import { FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaGithub, FaJs, FaPython } from 'react-icons/fa';
+import { Carousel } from 'react-bootstrap';
+import mui from '../../img/mui.png';
+import './index.css';
+
 
 const Footer = () => {
     return (
-
-        <div className="footer text-center bg-dark">
-            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
-                <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src={"..."} className="d-block w-100" alt="..."/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
+        <div className="footer text-center bg-info">
+            <Carousel interval={3000}>
+                <Carousel.Item>
+                    <div className="d-flex align-items-center justify-content-center">
+                        <span className="icon"><FaReact /></span>
                     </div>
-                    <div className="carousel-item">
-                    <img src={"..."} className="d-block w-100" alt="..."/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className="d-flex align-items-center justify-content-center">
+                        <span className="icon"><FaHtml5 /></span>
                     </div>
-                    <div className="carousel-item">
-                    <img src={"..."} className="d-block w-100" alt="..."/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className="d-flex align-items-center justify-content-center">
+                        <span className="icon"><FaCss3Alt /></span>
                     </div>
-                </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className="d-flex align-items-center justify-content-center">
+                        <span className="icon"><FaBootstrap /></span>
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className="d-flex align-items-center justify-content-center">
+                        <span className="icon"><FaGithub /></span>
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className="d-flex align-items-center justify-content-center">
+                        <span className="icon"><FaJs /></span>
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className="d-flex align-items-center justify-content-center">
+                        <span className="icon"><FaPython /></span>
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className="d-flex align-items-center justify-content-center">
+                    <span className="icon carousel-image"><img src={mui} alt="Material-UI" className="img-fluid" /></span>
+                    </div>
+                </Carousel.Item>
+            </Carousel>
         </div>
-
     );
 };
 
