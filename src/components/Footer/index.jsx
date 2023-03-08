@@ -7,7 +7,7 @@ import './index.css';
 
 const Footer = () => {
     return (
-        <div className="footer text-center bg-info">
+        <div className="footer text-center bg-info bg-opacity-75">
             <Carousel interval={3000}>
                 <Carousel.Item>
                     <div className="d-flex align-items-center justify-content-center">
