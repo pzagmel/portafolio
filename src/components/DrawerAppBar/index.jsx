@@ -63,12 +63,13 @@ function DrawerAppBar({window}) {
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
           </IconButton>
+          
           <Typography
-            variant="h6"
+            variant="h4"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            Pedro Antonio Zagal Melani
+            pzagMel
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
