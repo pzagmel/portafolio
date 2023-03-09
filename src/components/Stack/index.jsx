@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Carousel from 'react-material-ui-carousel';
-import { Paper } from '@material-ui/core';
+import { Paper, Typography } from '@material-ui/core';
 import mui from '../../assets/img/mui2.png';
 import bootstrap from '../../assets/img/bootstrap.webp';
 import css from '../../assets/img/css.webp';
@@ -29,9 +29,14 @@ const useStyles = makeStyles(theme => ({
             maxWidth: '70%',
             maxHeight: '70%',
             width: '70px',
-            height: '70px', // <-- Aquí estableces el tamaño deseado
-            margin: '0.5rem' // <-- Agrega un margen de 0.5 rem
+            height: '70px',
+            margin: '0.5rem'
         }
+    },
+    title: {
+        textAlign: 'center',
+        marginBottom: '1rem',
+        fontWeight: 'bold'
     }
 }));
 
@@ -42,23 +47,25 @@ export default function Stack() {
         setActiveStep(step);
     };
     return (
-        <Carousel
-            className={classes.root}
-            activeStep={activeStep}
-            onChange={handleStepChange}
-            interval={5000}
-            animation="slide"
-            timeout={500}
-            navButtonsAlwaysVisible={true}
-        >
-
-            {imgList.map((img, index) => (
-                <Paper key={index} className={classes.imgContainer}>
-                    <img src={img[0]} alt={`Imagen ${index}`} />
-                    <img src={img[1]} alt={`Imagen ${index}`} />
-                    <img src={img[2]} alt={`Imagen ${index}`} />
-                </Paper>
-            ))}
-        </Carousel>
+        <>
+            <Typography variant="h4" className={classes.title}>STACK</Typography>
+            <Carousel
+                className={classes.root}
+                activeStep={activeStep}
+                onChange={handleStepChange}
+                interval={5000}
+                animation="slide"
+                timeout={500}
+                navButtonsAlwaysVisible={true}
+            >
+                {imgList.map((img, index) => (
+                    <Paper key={index} className={classes.imgContainer}>
+                        <img src={img[0]} alt={`Imagen ${index}`} />
+                        <img src={img[1]} alt={`Imagen ${index}`} />
+                        <img src={img[2]} alt={`Imagen ${index}`} />
+                    </Paper>
+                ))}
+            </Carousel>
+        </>
     );
 }
