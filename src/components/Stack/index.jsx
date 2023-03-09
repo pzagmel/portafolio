@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     root: {
         maxWidth: '100%',
         flexGrow: 1,
-        marginBottom: '2rem'
+        marginBottom: '1rem'
     },
     imgContainer: {
         display: 'flex',
@@ -37,6 +37,9 @@ const useStyles = makeStyles(theme => ({
         textAlign: 'center',
         marginBottom: '1rem',
         fontWeight: 'bold'
+    },
+    customPaper: {
+        boxShadow: 'none'
     }
 }));
 
@@ -51,15 +54,16 @@ export default function Stack() {
             <Typography variant="h4" className={classes.title}>STACK</Typography>
             <Carousel
                 className={classes.root}
+                classes={{ paper: classes.customPaper }} // Aquí se aplica la clase personalizada al carrusel
                 activeStep={activeStep}
                 onChange={handleStepChange}
                 interval={5000}
-                animation="slide"
+                animation="fade"
                 timeout={500}
-                navButtonsAlwaysVisible={true}
+                navButtonsAlwaysVisible={false}
             >
                 {imgList.map((img, index) => (
-                    <Paper key={index} className={classes.imgContainer}>
+                    <Paper key={index} className={classes.imgContainer} style={{ boxShadow: 'none' }}>
                         <img src={img[0]} alt={`Imagen ${index}`} />
                         <img src={img[1]} alt={`Imagen ${index}`} />
                         <img src={img[2]} alt={`Imagen ${index}`} />
@@ -69,3 +73,6 @@ export default function Stack() {
         </>
     );
 }
+
+
+// .MuiPaper-elevation1 {
