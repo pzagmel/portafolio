@@ -14,7 +14,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
-import pedroavatar from '../../img/pedroavatar.jpg';
+import pedroavatar from '../../assets/img/pedroavatar.jpg';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', <Avatar
