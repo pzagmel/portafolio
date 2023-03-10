@@ -2,6 +2,7 @@ import React from 'react';
 import DrawerAppBar from '../DrawerAppBar';
 import BasicCard from '../Card';
 import Stack from '../Stack';
+import Footer from '../Footer';
 
 const Layout = () => {
     return (
@@ -24,7 +25,7 @@ const Layout = () => {
                     </div>
                 </div>
             </div>
-            <div className="row">{/* <Footer /> */}</div>
+            <div className="row"><Footer /></div>
         </>
     );
 };
