@@ -11,6 +11,7 @@ import html from '../../assets/img/html.webp';
 import js from '../../assets/img/js.webp';
 import python from '../../assets/img/python.webp';
 import react from '../../assets/img/reactjs.png';
+import './index.css';
 
 const imgList = [[html, css, js], [react, bootstrap, mui], [git, github, python]];
 

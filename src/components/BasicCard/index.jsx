@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 
 const BasicCard =({title,description})=> {
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card >
       <CardContent>
         <Typography variant="h5" component="div">
         {title}
