@@ -27,7 +27,7 @@ export default function Footer() {
       </a>
     </Typography>
     <Typography variant="body2" color="textSecondary" align="center">
-      © {new Date().getFullYear()} Created by Pzagmel
+      © {new Date().getFullYear()} Created by pzagmel
     </Typography>      
   </footer>
   

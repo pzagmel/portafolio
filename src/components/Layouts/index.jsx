@@ -50,7 +50,7 @@ const Layout = () => {
                             title="MY PROYECTS"
                         />
 
-                        <div className="row row-cols-1 row-cols-md-3 g-3">
+                        <div className="row row-cols-1 row-cols-md-3 g-3 my-4">
                             {proyectos.map((item, index) => {
                                 return (
                                     <div className="col text-center">

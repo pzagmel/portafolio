@@ -17,7 +17,7 @@ import Avatar from '@mui/material/Avatar';
 import pedroavatar from '../../assets/img/pedroavatar.jpg';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', <Avatar
+const navItems = ['Proyectos', 'Experiencia', <Avatar
   alt="P"
   src={pedroavatar}
   sx={{ width: 56, height: 56 }}
@@ -69,7 +69,7 @@ function DrawerAppBar({window}) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            pzagMel
+            pzagmel
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (

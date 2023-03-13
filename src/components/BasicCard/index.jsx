@@ -12,7 +12,7 @@ const BasicCard =({title,description})=> {
         <Typography variant="h5" component="div">
         {title}
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        <Typography sx={{ mb: 1.5}} color="text.secondary">
         {description}
         </Typography>
       </CardContent>
