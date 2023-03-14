@@ -27,7 +27,7 @@ const proyectos = [
         descripcion: "Agrega y elimina tus tareas.",
         ruta: "https://github.com/pzagmel/todo-list"
     },
-  
+
 ]
 
 const Layout = () => {
@@ -35,13 +35,13 @@ const Layout = () => {
         <>
             <div className="container">
                 <div className="row">
-                    <DrawerAppBar />
+                <DrawerAppBar />   
                 </div>
                 <div className="row">
                     <div className="col-12 col-sm-4 text-center">
                         <BasicCard
-                            title="WHO'S THIS GUY"
-                            description={["Soy una persona altamente responsable y comprometida con mi trabajo. Me esfuerzo por cumplir con mis tareas de manera eficiente y con gran atencion al detalle. Disfruto del trbajo en equipo, ya que creo que la colaboracion es la clave para lograr los objetivos de manera efectiva y eficiente. Siempre en busca de oportunidades para aprender y mejorar, ya sea a través de la capacitacion formal o simlemente de la experiencia diaria. Me siento cómodo trabajando en situaciones desafiantes y me gusta buscar soluciones creativas a los problemas que enfrento. Me esfuerzo por ser abierto y receptivo a los consejos y sugerencias de los demas, ya que creo que esto me ayuda a mejorar continuamente mi desempeño.", <Stack />
+                            title="Pedro Antonio Zagal Melani"
+                            description={["Desarrollador Web Full Stack Jr.", <Stack />
                             ]}
                         />
                     </div>
@@ -69,7 +69,6 @@ const Layout = () => {
 };
 
 export default Layout;
-
 
 
 

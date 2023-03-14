@@ -5,18 +5,23 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
 
-const BasicCard =({title,description})=> {
+const BasicCard = ({ title, description }) => {
   return (
     <Card >
       <CardContent>
-        <Typography variant="h5" component="div">
-        {title}
+        <Typography
+          variant="h3"
+          style={{ fontStyle: 'italic' }}
+        >
+          {title}
         </Typography>
-        <Typography sx={{ mb: 1.5}} color="text.secondary">
-        {description}
+        <Typography  variant="h5"
+          style={{ fontStyle: 'italic' }}
+         >
+          {description}
         </Typography>
       </CardContent>
-      <CardActions>      
+      <CardActions>
       </CardActions>
     </Card>
   );
