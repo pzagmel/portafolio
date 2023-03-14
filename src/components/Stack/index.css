@@ -3,3 +3,12 @@
 h4.MuiTypography-root.makeStyles-title-3.MuiTypography-h4{
     margin-top: 12px;
 }
+
+.img {
+    max-width: 70%;
+    max-height: 70%;
+    width: 70px;
+    height: 70px;
+    margin: 0.5rem;
+    object-fit: contain;
+  }

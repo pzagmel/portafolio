@@ -6,7 +6,7 @@ const ProyectCards = ({ img, title, descripcion, ruta }) => {
 
   return (
     <div className="card ">
-      <img src={img} className="card-img-top" style={{ "width": "100%", "height": "150px" }} />
+      <img src={img} className="card-img-top" alt="P" style={{ "width": "100%", "height": "150px" }} />
       <div className="card-body" style={{ "height": "145px" }}>
         <h5 className="card-title">{title}</h5>
         <p className="card-text">

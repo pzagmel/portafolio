@@ -1,23 +1,16 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
+import Typography from '@mui/material/Typography';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import './index.css';
 
-const useStyles = makeStyles(theme => ({
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
-    marginTop: 'auto', // para fijar el footer al fondo de la página
-  },
-}));
+
 
 export default function Footer() {
-  const classes = useStyles();
+  
 
   return (
-    <footer className={classes.footer}>
+    <footer className= "footer">
     <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
       <a href="https://www.linkedin.com/in/pzagmel/" className="linkedin-link" target="_blank" rel="noopener noreferrer">
         <LinkedInIcon className="linkedin-icon" />

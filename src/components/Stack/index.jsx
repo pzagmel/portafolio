@@ -1,7 +1,8 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { styled } from '@mui/material/styles';
 import Carousel from 'react-material-ui-carousel';
-import { Paper, Typography } from '@material-ui/core';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
 import mui from '../../assets/img/mui2.png';
 import bootstrap from '../../assets/img/bootstrap.webp';
 import css from '../../assets/img/css.webp';
@@ -13,9 +14,9 @@ import python from '../../assets/img/python.webp';
 import react from '../../assets/img/reactjs.png';
 import './index.css';
 
-const imgList = [[html, css, js], [react, bootstrap, mui], [git, github, python]];
+const imgList = [[html, css, js], [mui, bootstrap, react], [git, github, python]];
 
-const useStyles = makeStyles(theme => ({
+const useStyles = styled(theme => ({
     root: {
         maxWidth: '100%',
         flexGrow: 1,
@@ -32,6 +33,13 @@ const useStyles = makeStyles(theme => ({
             width: '70px',
             height: '70px',
             margin: '0.5rem'
+        },
+        '& img[src$="mui2.png"], & img[src$="reactjs.png"]': {
+            maxWidth: '70%',
+            maxHeight: '70%',
+            width: '50px',
+            height: '50px',
+            margin: '0.5rem'
         }
     },
     title: {
@@ -43,6 +51,7 @@ const useStyles = makeStyles(theme => ({
         boxShadow: 'none'
     }
 }));
+
 
 export default function Stack() {
     const classes = useStyles();
@@ -58,16 +67,16 @@ export default function Stack() {
                 classes={{ paper: classes.customPaper }} // Aquí se aplica la clase personalizada al carrusel
                 activeStep={activeStep}
                 onChange={handleStepChange}
-                interval={5000}
+                interval={3000}
                 animation="fade"
                 timeout={500}
                 navButtonsAlwaysVisible={false}
             >
                 {imgList.map((img, index) => (
                     <Paper key={index} className={classes.imgContainer} style={{ boxShadow: 'none' }}>
-                        <img src={img[0]} alt={`Imagen ${index}`} />
-                        <img src={img[1]} alt={`Imagen ${index}`} />
-                        <img src={img[2]} alt={`Imagen ${index}`} />
+                        <img src={img[0]} alt={`Imagen ${index}`} className="img" />
+                        <img src={img[1]} alt={`Imagen ${index}`} className="img" />
+                        <img src={img[2]} alt={`Imagen ${index}`} className="img" />
                     </Paper>
                 ))}
             </Carousel>
