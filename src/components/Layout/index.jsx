@@ -5,8 +5,12 @@ import Stack from '../Stack';
 import Footer from '../Footer';
 import ProyectCards from '../ProyectsCards';
 import pokegym from '../../assets/img/pokegym.png';
-import starwars from '../../assets/img/starwars.png'; 
+import starwars from '../../assets/img/starwars.png';
 import todo from '../../assets/img/todo.png';
+import './index.css';
+
+import Experiencia from '../Experiencia/Experiencia';
+
 
 const proyectos = [
     {
@@ -35,20 +39,23 @@ const Layout = () => {
         <>
             <div className="container">
                 <div className="row">
-                <DrawerAppBar />   
+                    <DrawerAppBar />
                 </div>
                 <div className="row">
                     <div className="col-12 col-sm-4 text-center">
                         <BasicCard
                             title="Pedro Antonio Zagal Melani"
-                            description={["Desarrollador Web Full Stack Jr.", <Stack />
-                            ]}
+                            description={"Desarrollador Web Full Stack Jr. Kinesiólogo"
+                            }
                         />
+                        <div className='stack'>
+
+                        <Stack  /> 
+                        </div>
                     </div>
                     <div className="col-12 col-sm-8 text-center">
-                        <BasicCard
-                            title="MY PROYECTS"
-                        />
+                     
+                    <h1 style={{fontStyle: 'italic'}}>PROYECTOS</h1>
                         <div className="row row-cols-1 row-cols-md-3 g-3 my-4">
                             {proyectos.map((item, index) => {
                                 return (
@@ -57,10 +64,14 @@ const Layout = () => {
                                     </div>
                                 );
                             })}
+                            
                         </div>
 
+                        <Experiencia />
                     </div>
                 </div>
+                
+
             </div>
             <div className="row"><Footer /></div>
         </>
