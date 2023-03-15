@@ -29,7 +29,7 @@ export default function Experiencia() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                 >
-                    <Typography>Educación</Typography>
+                    <Typography>Formación</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
