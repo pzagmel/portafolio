@@ -29,7 +29,7 @@ const proyectos = [
         img: todo,
         title: "My Tasks",
         descripcion: "Agrega y elimina tus tareas.",
-        ruta: "https://github.com/pzagmel/todo-list"
+        ruta: "https://github.com/pzagmel/todo-list-fetch-prueba1"
     },
 
 ]

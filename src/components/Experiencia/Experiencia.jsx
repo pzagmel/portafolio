@@ -81,8 +81,8 @@ export default function Experiencia() {
                                 Rehabilitacion Musculoesquelética.
                             </p>
                             <p>Rehabilitación Respiratoria.</p>
-                            <p>Atención en Servicio de Medicina, Sala IRA, Sala ERA y visitas domiciliarias. | 2018 </p>
-                            <p>Programa campaña de Invierno. | 2019</p>
+                            <p>Atención en Servicio de Medicina, Sala IRA, Sala ERA y visitas domiciliarias en el Hospital de Fresia. | 2018 </p>
+                            <p>Programa campaña de Invierno en Fresia. | 2019</p>
                         </ul>
                         <p>
                             <b>SUPERVISOR</b>
