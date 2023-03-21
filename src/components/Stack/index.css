@@ -1,6 +1,4 @@
-
-
-h4.MuiTypography-root.makeStyles-title-3.MuiTypography-h4{
+h4.MuiTypography-root.makeStyles-title-3.MuiTypography-h4 {
     margin-top: 12px;
 }
 
@@ -11,4 +9,31 @@ h4.MuiTypography-root.makeStyles-title-3.MuiTypography-h4{
     height: 70px;
     margin: 0.5rem;
     object-fit: contain;
-  }
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.imgContainer .img {
+    max-width: 70%;
+    max-width: 70%;
+    width: 70px;
+    height: 70px;
+    margin: 0.5rem
+}
+
+
+
+.imgContainer .img[src$="mui2.png"] img[src$="reactjs.png"] {
+    max-Width: 70%;
+    max-Height: 70%;
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem
+}
+

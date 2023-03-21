@@ -1,8 +1,8 @@
 import React from "react";
 import ProyectCards from "../components/ProyectsCards";
-import pokegym from '../../assets/img/pokegym.png';
-import starwars from '../../assets/img/starwars.png';
-import todo from '../../assets/img/todo.png';
+import pokegym from '../assets/img/pokegym.png';
+import starwars from '../assets/img/starwars.png';
+import todo from '../assets/img/todo.png';
 
 const proyectos = [
     {
@@ -35,7 +35,7 @@ const Proyectos= () => {
                         <div className="row row-cols-1 row-cols-md-3 g-3 my-2 ">
                             {proyectos.map((item, index) => {
                                 return (
-                                    <div className="col text-center">
+                                    <div className="col text-center"key={"asd"+index}>
                                         <ProyectCards img={item.img} title={item.title} descripcion={item.descripcion} ruta={item.ruta} />
                                     </div>
                                 );
