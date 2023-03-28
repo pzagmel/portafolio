@@ -1,59 +1,58 @@
 import React from 'react';
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from "react-router-dom";
-import DrawerAppBar from '../DrawerAppBar';
+// import {
+//     createBrowserRouter,
+//     RouterProvider,
+// } from "react-router-dom";
+import Navbar from '../Navbar';
 import BasicCard from '../BasicCard';
 import Stack from '../Stack';
 import Footer from '../Footer';
+import Curriculum from '../Curriculum';
 import Experiencia from '../../pages/experiencia';
 import Proyectos from '../../pages/proyectos';
 import './index.css';
 
 
-
-
-
-
 const Layout = () => {
-    const router = createBrowserRouter([
-        {
-          path: "/",
-          element: <Proyectos />,
-        },
-        {
-            path: "/experiencia",
-            element: <Experiencia />,
-          },
-      ]);
-   
+
+
     return (
         <>
             <div className="container">
                 <div className="row">
-                    <DrawerAppBar />
+                    <Navbar />
                 </div>
-                <div className="row">
-                    <div className="col-12 col-sm-4 text-center">
+                <div className="row" style={{ marginTop: "100px" }}>
+                    <div className="col-6 col-sm-12 text-center">
                         <BasicCard
                             title="Pedro Antonio Zagal Melani"
                             description={"Desarrollador Web Full Stack Jr. Kinesiólogo"
                             }
                         />
-
-                        <div className='stack'>
-                            <Stack />
-                        </div>
+                        <Curriculum/>
                     </div>
-                    <div className="col-12 col-sm-8 text-center">
-                        <RouterProvider router={router} />
+                </div>
+                <div className='row' style={{marginTop: '100px'}}>
+                    <div className="col-8 col-sm-12 text-center">                    
+                            <Stack />                                                  
+                    </div>                
+                </div>
+                <div className='row' style={{marginTop: '100px'}}>
+                    <div className="col-12 col-sm-12 text-center">
+                        <Proyectos />
+                    </div>
+                </div>
+                <div className='row' style={{marginTop: '100px'}}>
+                    <div className="col-12 col-sm-12">
+                        <Experiencia />
                     </div>
                 </div>
 
 
             </div>
-            <div className="row"><Footer /></div>
+            <div className='row' style={{marginTop: '100px'}}>
+                <Footer />
+                </div>
         </>
     );
 };

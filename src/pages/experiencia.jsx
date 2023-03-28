@@ -55,8 +55,7 @@ export default function Experiencia() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        Actualmente en búsqueda de experiencia en el mundo del desarrollo web y tecnología.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -85,10 +84,19 @@ export default function Experiencia() {
 
                         <h3>SUPERVISOR</h3>
                         <p>Local de suplementos alimenticios "MUSCLE-UP" | 2022 - Actualidad</p>
-
+                        <ul>
+                            <li>Manejo de caja.</li>
+                            <li>Inventario. </li>
+                            <li>Apoyo en Ventas.</li>
+                        </ul>
                         <h3>VENDEDOR Y ASESOR DEPORTIVO</h3>
                         <p>Local de suplementos alimenticios "MUSCLE-UP" | 2020 - 2022</p>
-
+                        <ul>
+                            <li>Asesoria deportiva y en rehabilitación.</li>
+                            <li>Manejo de caja.</li>
+                            <li>Inventario. </li>
+                            <li>Reparto a domicilio.</li>
+                        </ul>
       
                 </AccordionDetails>
             </Accordion>
