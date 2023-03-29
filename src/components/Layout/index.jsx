@@ -19,7 +19,7 @@ const Layout = () => {
                     <Navbar />
                 </div>
                 <div className="row" style={{ marginTop: "100px" }}>
-                    <div className="col-6 col-sm-12 text-center">
+                    <div className="col-12 col-sm-12 text-center">
                         <BasicCard
                             title="Pedro Antonio Zagal Melani"
                             description={"Desarrollador Web Full Stack Jr. Kinesiólogo"
@@ -27,13 +27,13 @@ const Layout = () => {
                         />
                     </div>
                     <div className="row" style={{ marginTop: "100px" }}>  
-                    <div className="col-6 col-sm-12 text-center">
+                    <div className="col-12 col-sm-12 text-center">
                         <Curriculum rutacv={"https://drive.google.com/file/d/1JSwuAgz19D34jSNFjL74_zyMLtMAq42N/view?usp=share_link"}/>
                         </div>
                         </div>
                 </div>
                 <div className='row' style={{marginTop: '100px'}}>
-                    <div className="col-8 col-sm-12 text-center">                    
+                    <div className="col-12 col-sm-12 text-center">                    
                             <Stack />                                                  
                     </div>                
                 </div>
