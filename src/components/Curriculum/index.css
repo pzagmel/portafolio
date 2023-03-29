@@ -1,0 +1,16 @@
+.btn-round {
+    background-color: #4c77af; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border-radius: 25%; /* Hacemos que el borde tenga forma de círculo */
+    border: none; /* Quitamos el borde */
+    padding: 12px 24px; /* Ajustamos el padding */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambiamos el cursor al pasar sobre el botón */
+    transition: transform 0.3s ease-in-out; /* Agregamos una transición */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3); /* Agregamos sombra */
+  }
+  
+  .btn-round:hover {
+    transform: scale(1.1); /* Agrandamos un poco el botón al pasar sobre él */
+  }
+  

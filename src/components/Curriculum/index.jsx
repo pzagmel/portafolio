@@ -1,22 +1,19 @@
 import React from "react";
+import './index.css';
 
-const Curriculum = () => {
-  return (
-    <div className="container">
-      <div className="row justify-content-center mt-3">
-        <div className="col-4 col-sm-4 text-center">
-          <button type="button" className="btn btn-primary rounded-circle">
-            CV Español
-          </button>
+
+const Curriculum = ({ rutacv }) => {
+    return (
+        <div className="container">
+            <a href={rutacv} target="_blank" rel="noreferrer">
+                <button className="btn-round">
+                    Descarga mi CV
+                </button>
+            </a>
+
         </div>
-        <div className="col-4 col-sm-4 text-center">
-          <button type="button" className="btn btn-primary rounded-circle">
-            CV Inglés
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
+    );
+}
 
 export default Curriculum;
+

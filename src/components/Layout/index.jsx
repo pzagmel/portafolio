@@ -1,8 +1,4 @@
 import React from 'react';
-// import {
-//     createBrowserRouter,
-//     RouterProvider,
-// } from "react-router-dom";
 import Navbar from '../Navbar';
 import BasicCard from '../BasicCard';
 import Stack from '../Stack';
@@ -13,8 +9,8 @@ import Proyectos from '../../pages/proyectos';
 import './index.css';
 
 
-const Layout = () => {
 
+const Layout = () => {
 
     return (
         <>
@@ -27,10 +23,14 @@ const Layout = () => {
                         <BasicCard
                             title="Pedro Antonio Zagal Melani"
                             description={"Desarrollador Web Full Stack Jr. Kinesiólogo"
-                            }
+                        }
                         />
-                        <Curriculum/>
                     </div>
+                    <div className="row" style={{ marginTop: "100px" }}>  
+                    <div className="col-6 col-sm-12 text-center">
+                        <Curriculum rutacv={"https://drive.google.com/file/d/1JSwuAgz19D34jSNFjL74_zyMLtMAq42N/view?usp=share_link"}/>
+                        </div>
+                        </div>
                 </div>
                 <div className='row' style={{marginTop: '100px'}}>
                     <div className="col-8 col-sm-12 text-center">                    
@@ -47,8 +47,6 @@ const Layout = () => {
                         <Experiencia />
                     </div>
                 </div>
-
-
             </div>
             <div className='row' style={{marginTop: '100px'}}>
                 <Footer />
