@@ -28,7 +28,8 @@ export default function Stack() {
             <Typography variant="h4" style={{
                 textAlign: 'center',
                 marginBottom: '1rem',
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                fontStyle: "italic" 
             }}>STACK</Typography>
             <Carousel
                 style={{

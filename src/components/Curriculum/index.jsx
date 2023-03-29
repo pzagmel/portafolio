@@ -6,7 +6,7 @@ const Curriculum = ({ rutacv }) => {
     return (
         <div className="container">
             <a href={rutacv} target="_blank" rel="noreferrer">
-                <button className="btn-round">
+                <button className="btn-round" style={{ fontStyle: "italic" }}>
                     Descarga mi CV
                 </button>
             </a>

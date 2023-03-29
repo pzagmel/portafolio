@@ -29,7 +29,8 @@ const proyectos = [
 const Proyectos= () => {
     return (
         <>
-            <div className="container">             
+               <div className="container">
+               <h1 id="proyectos" style={{ fontStyle: "italic" , fontWeight: 'bold' }}>Proyectos</h1>           
                 <div className="row justify-content-center">
                     <div className="col-12 col-sm-8 text-center">                      
                         <div className="row row-cols-1 row-cols-md-3 g-3 my-2 ">

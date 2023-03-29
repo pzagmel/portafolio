@@ -1,6 +1,15 @@
 
 img.d-inline-block.align-text-top{
-    width: 60px; /* Ajusta el tamaño a tu gusto */
-    height: 60px;
+    width: 50px; /* Ajusta el tamaño a tu gusto */
+    height: 50px;
     border-radius: 50%; /* Aplica un contorno redondo */
   }
+
+  .nav-link:hover {
+    cursor: pointer;
+  }
+
+  .nav-link.italic {
+    font-style: italic;
+  }
+  

@@ -7,9 +7,9 @@ import Typography from '@mui/material/Typography';
 
 const BasicCard = ({ title, description }) => {
   return (
-    <Card >
+    <Card  >
       <CardContent>
-        <Typography
+        <Typography id="top"
           variant="h3"
           style={{ fontStyle: 'italic' }}
         >
@@ -24,6 +24,7 @@ const BasicCard = ({ title, description }) => {
       <CardActions>
       </CardActions>
     </Card>
+
   );
 }
 export default BasicCard;

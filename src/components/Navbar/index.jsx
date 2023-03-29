@@ -1,13 +1,24 @@
 import React from 'react';
 import pedroavatar from '../../assets/img/pedroavatar.jpg';
 import './index.css';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <div className="navbar-brand " >
-        <img src={pedroavatar} alt="Logo" className="d-inline-block align-text-top avatar"/>      
+          <Link
+            activeClass="active"
+            to="top"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="nav-link"
+          >
+            <img src={pedroavatar} alt="Logo" className="d-inline-block align-text-top avatar" />
+          </Link>
         </div>
         <button
           className="navbar-toggler"
@@ -22,13 +33,30 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <a className="nav-link active" aria-current="page" >
+            <Link
+              activeClass="active"
+              to="proyectos"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="nav-link"
+              style={{ fontStyle: "italic" , fontWeight: 'bold' }}
+            >
               PROYECTOS
-            </a>
-            <a className="nav-link active" aria-current="page" >
-              EXPERIENCIA
-            </a>
-       
+            </Link>
+            <Link
+              activeClass="active"
+              to="experiencia"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="nav-link"
+              style={{ fontStyle: "italic" , fontWeight: 'bold' }}
+            >
+              CONÓCEME
+            </Link>
           </div>
         </div>
       </div>
