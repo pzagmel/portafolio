@@ -37,8 +37,8 @@ const Layout = () => {
                             <Stack />                                                  
                     </div>                
                 </div>
-                <div className='row' style={{marginTop: '100px'}}>
-                    <div className="col-12 col-sm-12 text-center">
+                <div className='row' style={{marginTop: '100px', fontStyle: "italic"}}>
+                    <div className="col-12 col-sm-12 col-md-12 text-center">
                         <Proyectos />
                     </div>
                 </div>

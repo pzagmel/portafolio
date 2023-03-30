@@ -68,7 +68,7 @@ export default function Experiencia() {
                 >
                     <Typography style={{ fontStyle: "italic"}}>Antecedentes laborales</Typography>
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails style={{ fontStyle: "italic"}}>
                   
 
                         <h3>KINESIÓLOGO</h3>

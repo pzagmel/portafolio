@@ -11,5 +11,9 @@ img.d-inline-block.align-text-top{
 
   .nav-link.italic {
     font-style: italic;
+    font-size: 10px;
   }
   
+  .navbar-dark {
+    background-color: rgba(4, 83, 132, 0.841);
+  }
