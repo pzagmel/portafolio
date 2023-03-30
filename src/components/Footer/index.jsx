@@ -19,7 +19,7 @@ export default function Footer() {
         <GitHubIcon className="github-icon" />
       </a>
     </Typography>
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography variant="body2" color="textSecondary" align="center" style={{fontStyle: "italic"}}>
       © {new Date().getFullYear()} Created by pzagmel
     </Typography>      
   </footer>

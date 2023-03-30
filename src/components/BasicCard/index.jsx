@@ -1,28 +1,26 @@
 import React from "react";
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import  './index.css';
 
 
 const BasicCard = ({ title, description }) => {
   return (
     <Card  >
-      <CardContent>
-        <Typography id="top"
+      <CardContent id="fondo">
+        < Typography 
           variant="h3"
-          style={{ fontStyle: 'italic' }}
+          style={{ fontStyle: 'italic', color: 'white' }}
         >
           {title}
         </Typography>
         <Typography  variant="h5"
-          style={{ fontStyle: 'italic' }}
+          style={{ fontStyle: 'italic', color: 'white' }}
          >
           {description}
-        </Typography>
+        </Typography  >
       </CardContent>
-      <CardActions>
-      </CardActions>
     </Card>
 
   );

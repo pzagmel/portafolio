@@ -33,7 +33,7 @@ const Layout = () => {
                         </div>
                 </div>
                 <div className='row' style={{marginTop: '100px'}}>
-                    <div className="col-12 col-sm-12 text-center">                    
+                    <div className="col-12 col-sm-12 text-center" style={{ backgroundColor: "rgb(208 201 208 / 45%)" }}>                    
                             <Stack />                                                  
                     </div>                
                 </div>

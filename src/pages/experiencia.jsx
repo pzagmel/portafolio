@@ -10,7 +10,7 @@ export default function Experiencia() {
     return (
         <div>
              <h1 id="experiencia" className='text-center' style={{ fontStyle: "italic" , fontWeight: 'bold' }}>Conóceme</h1> 
-            <Accordion>
+            <Accordion style={{ backgroundColor: "rgb(244 110 5 / 69%)"}}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
@@ -24,7 +24,7 @@ export default function Experiencia() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion style={{ backgroundColor: "rgb(244 110 5 / 69%)"}}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2a-content"
@@ -46,7 +46,7 @@ export default function Experiencia() {
 
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion style={{ backgroundColor: "rgb(244 110 5 / 69%)"}}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel3a-content"
@@ -60,7 +60,7 @@ export default function Experiencia() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion style={{ backgroundColor: "rgb(244 110 5 / 69%)"}}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel4a-content"

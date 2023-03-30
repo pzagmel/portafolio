@@ -29,7 +29,7 @@ export default function Stack() {
                 textAlign: 'center',
                 marginBottom: '1rem',
                 fontWeight: 'bold',
-                fontStyle: "italic" 
+                fontStyle: "italic"
             }}>STACK</Typography>
             <Carousel
                 style={{
@@ -46,7 +46,7 @@ export default function Stack() {
                 navButtonsAlwaysVisible={false}
             >
                 {imgList.map((img, index) => (
-                    <Paper key={index} style={{ boxShadow: 'none' }}>
+                    <Paper key={index} style={{ boxShadow: 'none'  }}>
                         <img src={img[0]} alt={`Imagen ${index}`} className="img" />
                         <img src={img[1]} alt={`Imagen ${index}`} className="img" />
                         <img src={img[2]} alt={`Imagen ${index}`} className="img" />
